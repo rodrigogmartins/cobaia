@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Tabela </title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="inputs">
+            <div id="input-dados">
+                <input type="text" id="titulo" placeholder="Titulo">
+                <input type="text" id="cabecalho" placeholder="Cabeçalho">
+                <input type="text" id="dados" placeholder="Dados, separados por ;">
+                <input type="text" id="fonte" placeholder="Fonte">
+            </div>
+            <div id="filtro">
+                <div>
+                    <input type="checkbox" id="Fr">
+                    <label for="Fr"> Frequencia Relativa </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="FR">
+                    <label for="FR"> Frequencia Relativa Acumulada </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Fi">
+                    <label for="Fi"> Frequencia Absoluta </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="FI">
+                    <label for="FI"> Frequencia Absoluta Acumulada </label>
+                </div>
+                <div>
+                    <button id="gerar">G e r a r</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span id="tituloTabela"> Meus DADOS </span>
+        </div>
+
+        <div>
+            <table>
+                <tr id="table-labels">
+                    <th id="table-cabecalho"> Quantidades </th>
+                </tr>
+                <tr class="informacoes"></tr>
+                <tr class="informacoes"></tr>
+                <tr class="informacoes"></tr>
+                <tr class="informacoes"></tr>
+                <tr class="informacoes"></tr>
+            </table>
+        </div>
+
+        <div>
+            <span id="fonteTabela"> Fonte: IBGE </span>
+        </div>
+        <script src="js/main.js" type="module"></script>
+    </body>
+</html>
